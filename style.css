@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+body {  
+  background-image: url("https://www.theepochtimes.com/assets/uploads/2016/01/19/photo-1444858345149-8ff40887589b.jpg");
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  text-shadow: 1px 2px 3px #0c0b0b;
+  padding:5px;
+  color:  white;
+  font-weight: bold;
+}
+
+.page-wrapper { 
+  display:grid;  
+  grid-template-areas: "header header header"
+                        "main main sidebar"
+                        "footer footer footer";
+    grid-template-columns: 3fr 2fr 1fr; 
+  grid-gap:5px;
+}
+
+footer {
+  grid-area: footer;
+  font-family: Pacifico, cursive;
+}
+
+.intro {
+  grid-area:header;
+}
+
+.sidebar {
+  grid-area:sidebar;
+}
+
+.main {
+  grid-area:main;
+}
+
+.intro {
+  display:grid;
+  grid-template-columns: 1fr 2fr;  
+  grid-gap:5px;
+}
+
+.summary{
+  grid-column:1/3;
+  grid-row:3;
+  align-self:start;
+}
+
+.preamble {
+  grid-column:2;
+  grid-row:1;   
+  align-self:center;
+}
+
+header {
+  grid-column:1;
+  grid-row:1;
+  font-size:25px; 
+  align-self:center;  
+  font-family: Pacifico, cursive;
+}
+.sidebar {
+  display: grid;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;   
+}
+
+.sidebar li {
+  display:inline;  
+}
+
+.main {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.requirements {
+  grid-column:1/-1;
+  grid-row:1;
+  margin-top:-50px;
+}
+
+footer {
+  grid-column:1/4;
+  display: flex;
+  justify-content:space-around;
+  font-size:30px;
+  padding-left: 20%;
+}
+
+abbr {
+  color: green;
+  font-size:20px;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+h1:before{
+  content: "Mountain ";
+}
+h2 h1 {
+  color: white;
+  text-align:center;  
+  font-family: Pacifico, cursive;
+}
+
+h3 {
+  color: white;
+  text-align:center;
+  font-size:25px;  
+  font-family: Pacifico, cursive;
+}
+
+@media only screen and (max-width: 700px)   {
+        .page-wrapper {
+          display:inline;
+        }
+  .intro {
+    display:inline;
+    
+  }
+  .main {
+    display:inline;
+  }
+  h3 {
+    font-size:22px;
+  }
+}
