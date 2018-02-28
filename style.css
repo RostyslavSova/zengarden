@@ -127,6 +127,9 @@ h3 {
         .page-wrapper {
           display:inline;
         }
+        footer {
+          padding-left: 0px;
+        }
   .intro {
     display:inline;
     
